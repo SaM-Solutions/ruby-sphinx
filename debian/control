@@ -1,0 +1,18 @@
+Source: ruby-sphinx
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Vlad Shakhov <v.shakhov@sam-solutions.net>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.13~), ruby-systemtimer, ruby-rspec
+Standards-Version: 3.9.3
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-sphinx.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-sphinx.git;a=summary
+Homepage: http://github.com/kpumuk/sphinx
+XS-Ruby-Versions: all
+
+Package: ruby-sphinx
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-systemtimer
+Description: Sphinx Client API for Ruby
+ An easy interface to Sphinx standalone full-text search engine. It is implemented as plugin for Ruby on Rails, but can be easily used as standalone library.
