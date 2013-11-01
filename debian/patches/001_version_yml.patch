@@ -1,0 +1,16 @@
+## Description: Normalize placement of VERSION.yml file
+## Origin/Author: Vlad Shakhov <v.shakhov@sam-solutions.net>
+## Bug: bug URL
+diff --git a/lib/sphinx.rb b/lib/sphinx.rb
+index 8ffab81..8b3cdac 100644
+--- a/lib/sphinx.rb
++++ b/lib/sphinx.rb
+@@ -12,7 +12,7 @@
+ #
+ module Sphinx
+   VERSION = begin
+-    config = YAML.load(File.read(File.dirname(__FILE__) + '/../VERSION.yml'))
++    config = YAML.load(File.read(File.dirname(__FILE__) + '/sphinx/VERSION.yml'))
+     "#{config[:major]}.#{config[:minor]}.#{config[:patch]}.#{config[:build]}"
+   end
+ 
